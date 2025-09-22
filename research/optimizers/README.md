@@ -4,7 +4,7 @@ Goal : empirically compare Lion, Sophia, AdamW and an 8-bit Adam implementation 
 
 ---
 
-What is an optimizer (1-line)
+What is an optimizer 
 An **optimizer** decides how model parameters are updated from gradients during training/fine-tuning. It controls step sizes, per-parameter scaling, and state kept across steps (momentum, moments, preconditioners). Choice of optimizer impacts **how quickly** and **how stably** a model learns and the **memory/compute** required.
 
 ---
@@ -43,11 +43,4 @@ For each optimizer (Lion, Sophia, AdamW, Adam8bit) we  run the same LoRA fine-tu
 
 
 
-
-
-
-## Next step (practical)
-You said you have LoRA fine-tuning code — great. Paste it here (or point to the script) and I will:
-1. Add a minimal wrapper that runs one optimizer config and logs the six metrics above.  
-2. Produce a one-click Colab notebook that runs the 4 optimizers (short runs) and saves `results/*.json` + the 4 plots.
 
