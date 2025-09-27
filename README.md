@@ -1,46 +1,12 @@
-LLM Research Journal
+## What I focus on (highest impact)
 
-This is my open notebook — a public lab journal where I run small but sharp experiments to understand how large language models really work under the hood. Each day I explore one fundamental building block of modern AI systems, document the results, and share everything openly.
-
-
-
-Core Experiments.
-
--Activation Functions: Compare ReLU, GELU, SiLU, SwiGLU on a toy LM.
-
--Mixed Precision (AMP): Benchmark FP32 vs AMP on Colab T4 across model sizes.
-
--Mixture of Experts: Study tradeoff between few-big vs many-small experts.
-
--Expert Capacity: Explore capacity factor (1.0 → 2.0) and overflow.
-
--Wrap-Up: Combine best ideas into one “ultimate” model + write results summary.
+* **Mixed precision & AMP** — measure speed/quality tradeoffs on T4/Colab; show stable recipes. 
+* **Efficient attention** (FlashAttention, sliding-window) — implement, benchmark memory and throughput. 
+* **Finetuning at low cost** (LoRA vs QLoRA + quant-aware finetune) — recipe + convergence graphs. 
+* **Quantization & PTQ/QAT** — int8/AWQ/GGUF pipeline and accuracy vs size charts. 
+* **Optimizers & memory tricks** (Lion, Adam8bit, gradient accumulation) — VRAM, speed, stability tradeoffs. 
+* **Inference stack & KV cache** — port small model to Deepspeed / vLLM / ExLlama, measure latency and cost. 
+* **Distillation & compression** — distill → export small model + deployment artifacts.
+* **Mixture-of-Experts (toy)** — router, utilization plots, FLOP tradeoffs. 
 
 
-Beyond the sprint, I will also investigate:
-
-Fine-tuning Tradeoffs
-
--Comparing LoRA vs QLoRA in low-resource settings.
-
--Studying quantization during fine-tuning (impact on stability, convergence, and downstream accuracy).
-
--Evaluating post-training quantization (PTQ) vs quantization-aware training (QAT).
-
-Optimizer tradeoffs
-
--Benchmark Lion, Sophia, AdamW, Adam8bit → effects on VRAM, throughput, stability.
-
-Gradient Accumulation vs Batch Size
-
--Finding the sweet spot for stable training on limited VRAM.
-
-Efficient Attention
-
--Implementing FlashAttention, sliding window, and simpler memory-efficient variants.
-
-Distillation & Model Compression
-
--Training small models to mimic larger ones for edge deployment.
-
- 
