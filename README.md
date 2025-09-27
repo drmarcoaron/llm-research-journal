@@ -2,7 +2,7 @@ LLM Research Journal
 
 This is my open notebook — a public lab journal where I run small but sharp experiments to understand how large language models really work under the hood. Each day I explore one fundamental building block of modern AI systems, document the results, and share everything openly.
 
-The spirit: “Build, measure, learn, repeat.”
+
 
 Core Experiments.
 
@@ -43,15 +43,4 @@ Distillation & Model Compression
 
 -Training small models to mimic larger ones for edge deployment.
 
- Deliverables :
-
--For each experiment I will publish:
-
--Colab Notebook (fully reproducible)
-
--Graph/Plot (loss curves, speedups, tradeoffs)
-
--One-line Conclusion in README
-
--Code & Results in /experiments and /results
-
+ 
