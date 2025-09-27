@@ -1,4 +1,4 @@
-## What I focus on (highest impact)
+## What I focus on ?
 
 * **Mixed precision & AMP** — measure speed/quality tradeoffs on T4/Colab; show stable recipes. 
 * **Efficient attention** (FlashAttention, sliding-window) — implement, benchmark memory and throughput. 
